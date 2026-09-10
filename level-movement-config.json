@@ -1,0 +1,147 @@
+{
+  "gameVersion": "1.0.0",
+  "platform": "PC",
+  "movementConfig": {
+    "walking": {
+      "baseSpeed": 5.5,
+      "maxSpeed": 6.0,
+      "acceleration": 0.15,
+      "deceleration": 0.12,
+      "animationSpeed": 1.0
+    },
+    "sprinting": {
+      "baseSpeed": 8.0,
+      "maxSpeed": 9.2,
+      "acceleration": 0.25,
+      "deceleration": 0.18,
+      "staminaCost": 1.5,
+      "animationSpeed": 1.3
+    },
+    "jumping": {
+      "jumpForce": 12.5,
+      "jumpDuration": 0.6,
+      "maxJumpHeight": 1.8,
+      "cooldown": 0.3,
+      "animationSpeed": 1.2
+    },
+    "dashing": {
+      "dashSpeed": 15.0,
+      "dashDuration": 0.4,
+      "dashCooldown": 1.2,
+      "staminaCost": 2.0,
+      "direction": "forward"
+    },
+    "crouching": {
+      "baseSpeed": 2.5,
+      "maxSpeed": 3.2,
+      "acceleration": 0.08,
+      "deceleration": 0.1,
+      "heightReduction": 0.4,
+      "animationSpeed": 0.8
+    },
+    "prone": {
+      "baseSpeed": 1.2,
+      "maxSpeed": 1.8,
+      "acceleration": 0.05,
+      "deceleration": 0.08,
+      "heightReduction": 0.7,
+      "animationSpeed": 0.6
+    }
+  },
+  "staminaConfig": {
+    "maxStamina": 100,
+    "sprintStaminaDrain": 2.5,
+    "dashStaminaDrain": 3.5,
+    "staminaRegenRate": 1.2,
+    "staminaRegenDelay": 2.0
+  },
+  "groundPhysics": {
+    "gravity": 9.8,
+    "friction": 0.15,
+    "airControl": 0.3,
+    "surfaceGrip": 1.0
+  },
+  "levelDesign": {
+    "terrainTypes": [
+      {
+        "name": "grass",
+        "speedModifier": 1.0,
+        "frictionModifier": 1.0
+      },
+      {
+        "name": "concrete",
+        "speedModifier": 1.05,
+        "frictionModifier": 0.9
+      },
+      {
+        "name": "water",
+        "speedModifier": 0.5,
+        "frictionModifier": 1.2
+      },
+      {
+        "name": "sand",
+        "speedModifier": 0.8,
+        "frictionModifier": 1.3
+      },
+      {
+        "name": "snow",
+        "speedModifier": 0.7,
+        "frictionModifier": 1.5
+      }
+    ]
+  },
+  "levelProgression": [
+    {
+      "level": 1,
+      "name": "Beginner",
+      "speedMultiplier": 1.0,
+      "description": "Base movement speed"
+    },
+    {
+      "level": 2,
+      "name": "Intermediate",
+      "speedMultiplier": 1.05,
+      "description": "Slightly faster movement"
+    },
+    {
+      "level": 3,
+      "name": "Advanced",
+      "speedMultiplier": 1.1,
+      "description": "Improved movement speed"
+    },
+    {
+      "level": 4,
+      "name": "Expert",
+      "speedMultiplier": 1.15,
+      "description": "Enhanced movement capabilities"
+    },
+    {
+      "level": 5,
+      "name": "Master",
+      "speedMultiplier": 1.2,
+      "description": "Maximum movement efficiency"
+    }
+  ],
+  "pcSpecificSettings": {
+    "keyboardControl": {
+      "responseTime": 0.01,
+      "inputBuffering": true,
+      "bufferSize": 3
+    },
+    "mouseControl": {
+      "mouseSensitivity": 1.0,
+      "enableSmoothing": true,
+      "smoothingFactor": 0.15
+    },
+    "controllerSupport": {
+      "enabled": true,
+      "deadzone": 0.15,
+      "triggerThreshold": 0.5
+    }
+  },
+  "animations": {
+    "transitionSpeed": 0.3,
+    "blendingMode": "smooth",
+    "footstepSoundInterval": 0.5
+  }
+}
