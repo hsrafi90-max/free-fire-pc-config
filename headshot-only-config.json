@@ -1,0 +1,215 @@
+{
+  "gameVersion": "latest",
+  "platform": "PC",
+  "configType": "HeadshotOnly",
+  "description": "Free Fire Latest Version - Headshot Only Configuration",
+  "headshotConfig": {
+    "enabled": true,
+    "headshotOnly": true,
+    "damageMultiplier": {
+      "headshot": 2.5,
+      "bodyshot": 0.0,
+      "legshot": 0.0,
+      "armshot": 0.0
+    }
+  },
+  "headshotHitboxes": {
+    "head": {
+      "enabled": true,
+      "damageMultiplier": 2.5,
+      "criticalChance": 100,
+      "hitboxSize": 0.35,
+      "position": {
+        "x": 0,
+        "y": 0.85,
+        "z": 0
+      },
+      "radius": 0.2
+    },
+    "body": {
+      "enabled": false,
+      "damageMultiplier": 0.0,
+      "hitboxSize": 0.6,
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 0
+      },
+      "radius": 0.25
+    },
+    "legs": {
+      "enabled": false,
+      "damageMultiplier": 0.0,
+      "hitboxSize": 0.4,
+      "position": {
+        "x": 0,
+        "y": 0.15,
+        "z": 0
+      },
+      "radius": 0.15
+    },
+    "arms": {
+      "enabled": false,
+      "damageMultiplier": 0.0,
+      "hitboxSize": 0.3,
+      "position": {
+        "x": 0.25,
+        "y": 0.6,
+        "z": 0
+      },
+      "radius": 0.1
+    }
+  },
+  "weaponBalance": {
+    "pistols": {
+      "headshotDamage": 45,
+      "accuracy": 0.85,
+      "fireRate": 0.15,
+      "headshotKillChance": 85
+    },
+    "smg": {
+      "headshotDamage": 28,
+      "accuracy": 0.75,
+      "fireRate": 0.08,
+      "headshotKillChance": 90
+    },
+    "rifles": {
+      "headshotDamage": 55,
+      "accuracy": 0.95,
+      "fireRate": 0.12,
+      "headshotKillChance": 100
+    },
+    "shotguns": {
+      "headshotDamage": 85,
+      "accuracy": 0.60,
+      "fireRate": 0.5,
+      "headshotKillChance": 100
+    },
+    "snipers": {
+      "headshotDamage": 100,
+      "accuracy": 1.0,
+      "fireRate": 0.8,
+      "headshotKillChance": 100
+    },
+    "grenades": {
+      "explosionDamage": 0,
+      "enabled": false,
+      "headshotKillChance": 0
+    }
+  },
+  "playerHealth": {
+    "maxHealth": 100,
+    "headshotOnlyMode": true,
+    "minHealthForKill": 1,
+    "healthRegeneration": {
+      "enabled": false,
+      "rate": 0
+    }
+  },
+  "gameplayMechanics": {
+    "oneHeadshotKill": true,
+    "allowBodyshots": false,
+    "allowLegshots": false,
+    "bodyDamagePassthrough": 0,
+    "knockbackOnHeadshot": {
+      "enabled": true,
+      "force": 2.5,
+      "duration": 0.2
+    },
+    "headshotMarkerVisibility": {
+      "enabled": true,
+      "showOnHit": true,
+      "markerColor": "red",
+      "markerDuration": 1.5
+    }
+  },
+  "scoreAndRewards": {
+    "headshotKillPoints": 100,
+    "streakBonus": {
+      "3headshots": 50,
+      "5headshots": 150,
+      "10headshots": 300
+    },
+    "accuracy": {
+      "trackHeadshotAccuracy": true,
+      "bonusPercentage": 1.5
+    }
+  },
+  "audioVisuals": {
+    "headshotSound": {
+      "enabled": true,
+      "volume": 1.0,
+      "soundType": "critical_hit"
+    },
+    "headshotVFX": {
+      "enabled": true,
+      "bloodEffect": true,
+      "criticalHitEffect": true,
+      "particleScale": 1.5
+    },
+    "deathCam": {
+      "enabled": true,
+      "showHeadshotReplay": true,
+      "replayDuration": 3.0
+    }
+  },
+  "aiming": {
+    "aimAssistance": false,
+    "headshotHighlight": {
+      "enabled": true,
+      "outlineColor": "orange",
+      "outlineThickness": 2
+    },
+    "scopeSettings": {
+      "headshotZoom": 1.5,
+      "sensitivity": 1.0,
+      "smoothing": 0.2
+    }
+  },
+  "matchSettings": {
+    "gameMode": "HeadshotOnly",
+    "friendlyFire": false,
+    "headshotOnlyRules": true,
+    "eliminationCondition": "headshotKill",
+    "totalPlayersPerMatch": 50,
+    "mapSize": "large"
+  },
+  "difficultySetting": [
+    {
+      "level": "Easy",
+      "headshotSizeMultiplier": 1.5,
+      "enemyHeadshotAccuracy": 0.5,
+      "playerHealthBoost": 1.2
+    },
+    {
+      "level": "Normal",
+      "headshotSizeMultiplier": 1.0,
+      "enemyHeadshotAccuracy": 0.7,
+      "playerHealthBoost": 1.0
+    },
+    {
+      "level": "Hard",
+      "headshotSizeMultiplier": 0.8,
+      "enemyHeadshotAccuracy": 0.9,
+      "playerHealthBoost": 0.8
+    },
+    {
+      "level": "Extreme",
+      "headshotSizeMultiplier": 0.6,
+      "enemyHeadshotAccuracy": 0.99,
+      "playerHealthBoost": 0.6
+    }
+  ],
+  "statistics": {
+    "trackHeadshotRatio": true,
+    "displayHeadshotPercentage": true,
+    "trackConsecutiveHeadshots": true,
+    "leaderboardByHeadshotAccuracy": true
+  },
+  "pcOptimizations": {
+    "headshotDetectionResolution": "high",
+    "raycastPrecision": 0.001,
+    "hitboxUpdateRate": 120,
+    "criticalHitProcessing": "prioritized"
+  }
+}
