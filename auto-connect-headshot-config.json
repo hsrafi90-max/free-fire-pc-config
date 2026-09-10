@@ -1,0 +1,124 @@
+{
+  "config_name": "Free Fire Auto Connect Headshot",
+  "version": "1.0.0",
+  "description": "Automated configuration for auto-connecting and headshot optimization in Free Fire PC",
+  "last_updated": "2026-09-10",
+  "auto_connect": {
+    "enabled": true,
+    "auto_reconnect_on_disconnect": true,
+    "reconnect_attempts": 5,
+    "reconnect_delay_ms": 2000,
+    "connection_timeout_ms": 10000,
+    "server_priority": [
+      "AS-1",
+      "AS-2",
+      "AS-3"
+    ],
+    "fallback_server": "AUTO"
+  },
+  "headshot_optimization": {
+    "enabled": true,
+    "aim_sensitivity": {
+      "general": 95,
+      "scope_2x": 90,
+      "scope_4x": 85,
+      "scope_8x": 80
+    },
+    "crosshair_config": {
+      "color": "white",
+      "opacity": 100,
+      "size": "small",
+      "style": "dot_crosshair"
+    },
+    "headshot_detection": {
+      "enabled": true,
+      "target_lock_range": 150,
+      "lock_strength": "medium"
+    },
+    "quick_scope": {
+      "enabled": true,
+      "scope_delay_ms": 50,
+      "unscope_delay_ms": 75
+    }
+  },
+  "keyboard_bindings": {
+    "move_forward": "W",
+    "move_backward": "S",
+    "move_left": "A",
+    "move_right": "D",
+    "jump": "SPACE",
+    "crouch": "CTRL",
+    "prone": "Z",
+    "shoot": "MOUSE_LEFT",
+    "aim": "MOUSE_RIGHT",
+    "scope": "SCROLL_UP",
+    "reload": "R",
+    "switch_weapon": "Q",
+    "grenade": "G",
+    "melee": "F",
+    "use_item": "E",
+    "emote": "M"
+  },
+  "mouse_settings": {
+    "dpi": 800,
+    "polling_rate": 1000,
+    "acceleration": false,
+    "raw_input": true,
+    "mouse_sensitivity": {
+      "horizontal": 80,
+      "vertical": 80,
+      "ads_sensitivity": 0.75
+    }
+  },
+  "graphics_optimization": {
+    "resolution": "1920x1080",
+    "graphics_quality": "high",
+    "frame_rate_cap": 240,
+    "vsync": false,
+    "anti_aliasing": "FXAA",
+    "shadow_quality": "medium",
+    "texture_quality": "high"
+  },
+  "performance": {
+    "priority_process": true,
+    "cpu_threads": "all",
+    "gpu_utilization": "high",
+    "memory_optimization": true,
+    "background_apps_disabled": true
+  },
+  "network": {
+    "connection_type": "broadband",
+    "latency_target_ms": 50,
+    "packet_loss_threshold": 2,
+    "network_optimization": true,
+    "vpn_recommended": false
+  },
+  "audio": {
+    "master_volume": 100,
+    "sfx_volume": 95,
+    "music_volume": 40,
+    "voice_chat_volume": 80,
+    "footstep_sound_enhancement": true,
+    "directional_audio": true
+  },
+  "advanced_features": {
+    "aim_assist": {
+      "enabled": false,
+      "aim_assist_strength": "disabled"
+    },
+    "recoil_control": {
+      "enabled": true,
+      "recoil_reduction": 0.8
+    },
+    "spread_reduction": {
+      "enabled": true,
+      "reduction_percentage": 15
+    },
+    "prediction_system": {
+      "enabled": true,
+      "prediction_accuracy": "high"
+    }
+  },
+  "status": "active",
+  "notes": "This configuration optimizes Free Fire PC for headshot accuracy with auto-reconnect functionality. Adjust sensitivity values based on your hardware and personal preference."
+}
